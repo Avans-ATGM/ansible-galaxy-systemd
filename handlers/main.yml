@@ -5,5 +5,5 @@
 
 - name: galaxy mule start
   systemd:
-      name: galaxy.service
+      name: {{ galaxy_systemd_unit_name }}.service
       state: started

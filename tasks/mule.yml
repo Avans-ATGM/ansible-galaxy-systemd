@@ -11,5 +11,5 @@
 
 - name: Enable Galaxy Unit
   systemd:
-    name: galaxy.service
+    name: {{ galaxy_systemd_unit_name }}.service
     enabled: yes
